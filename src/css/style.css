@@ -1,0 +1,7 @@
+/*? GLOBAL */
+@import "./global/reset.css";
+@import "./global/one-for-all.css";
+@import "./global/colors.css";
+
+/*? HEADER */
+@import "./header/header.css";
