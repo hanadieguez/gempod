@@ -12,36 +12,57 @@
 
   <title>Gempod</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="preload" href="./src/css/style.css" as="style">
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
+
+  <!-- --------------------- HEADER --------------------- -->
+
   <header class="header-bg">
     <div class="header">
-      <h1>Gempod</h1>
+      <a href="./">
+        <h1 class="header__logo">Gempod</h1>
+      </a>
       <nav aria-label="principal">
+
+        <!-- ------------- HEADER > MENU DESKTOP ------------- -->
         <ul class="header__menu">
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Streaming</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">More</a></li>
         </ul>
       </nav>
+
+      <!-- ------------- HEADER > ÍCONES DE MENU ------------- -->
       <div class="header__icones">
         <button>
-          Lupa
+          <box-icon name='search' size="md"></box-icon>
+        </button>
+        <button class="notificacao">
+          <box-icon name='bell' size="md"></box-icon>
         </button>
         <button>
-          Sino
-        </button>
-        <button>
-          Menu
+          <box-icon name='user' size="md"></box-icon>
         </button>
       </div>
     </div>
   </header>
+
+  <!-- --------------------- CONTENT --------------------- -->
+
+  <section>
+
+  </section>
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>

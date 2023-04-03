@@ -1,7 +1,24 @@
 body {
+  font-family: "Nunito", sans-serif;
   color: var(--w);
 }
 
 a {
   color: var(--b3);
+}
+
+.notificacao {
+  position: relative;
+}
+
+.notificacao::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #5fd460;
+  border: 3px solid var(--b2);
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
 }
