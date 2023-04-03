@@ -5,3 +5,7 @@
 
 /*? HEADER */
 @import "./header/header.css";
+
+/*? FRIENDS */
+@import "./content/friends.css";
+@import "./content/main-stream.css";

@@ -22,3 +22,7 @@ a {
   position: absolute;
   right: 3px;
 }
+
+* box-icon {
+  fill: #d3d5dc;
+}
