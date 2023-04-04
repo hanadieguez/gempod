@@ -1,16 +1,67 @@
-.content__main-stream {
-  flex: 10;
+.main-stream-bg {
   background-image: url("../../img/valorant-wallpaper.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  position: relative;
+  flex: 10;
 }
 
-.content__main-stream::after {
+.main-stream-bg::after {
   content: "";
+  position: absolute;
+  top: 0;
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .05) 20%, rgba(20, 20, 20, 1) 100%);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.05) 20%,
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+
+.content__main-stream {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 800px;
+  height: 600px;
+  padding-left: 80px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.content__main-stream h1 {
+  font-size: 36px;
+}
+
+.content__main-stream > span {
+  display: flex;
+  align-items: center;
+}
+
+.content__main-stream img {
+  border-radius: 50%;
+  width: 30px;
+  margin-right: 15px;
+}
+
+.main-stream__dot-separator {
+  padding: 0 18px;
+}
+
+.main-stream__btn {
+  background: var(--main1);
+  color: var(--w);
+  border-radius: 15px;
+  font-weight: 600;
+  padding: 20px 50px;
+  margin-top: 10px;
+}
+
+.main-stream__btn:hover {
+  background: #2688ed;
 }

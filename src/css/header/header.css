@@ -22,16 +22,6 @@
   font-weight: 600;
 }
 
-.header__menu a {
-  padding: 10px 25px;
-}
-
-.header__menu a:hover {
-  background-color: var(--main1);
-  color: var(--w);
-  border-radius: 15px;
-}
-
 .menu-ico {
   display: none;
 }

@@ -1,3 +1,7 @@
+* box-icon {
+  fill: #d3d5dc;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   color: var(--w);
@@ -7,11 +11,11 @@ a {
   color: var(--b3);
 }
 
-.notificacao {
+.notification {
   position: relative;
 }
 
-.notificacao::after {
+.notification::after {
   content: "";
   display: inline-block;
   width: 10px;
@@ -23,6 +27,12 @@ a {
   right: 3px;
 }
 
-* box-icon {
-  fill: #d3d5dc;
+.btn-menu {
+  padding: 10px 25px;
+}
+
+.btn-menu:hover {
+  background-color: var(--main1);
+  color: var(--w);
+  border-radius: 15px;
 }
