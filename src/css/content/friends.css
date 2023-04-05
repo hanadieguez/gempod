@@ -1,25 +1,14 @@
-.content {
-  display: flex;
-}
-
-.content__friends {
-  background-color: var(--b1);
-  flex: 2;
-  padding: 40px;
-}
-
 .content__friends > span {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  color: var(--b3);
+  color: var(--b4);
   font-size: 1.25rem;
   font-weight: 600;
 }
 
 .content__friends-list {
-
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -40,15 +29,39 @@
 }
 
 .content__friends-list li img {
-  width: 30px;
+  width: 28px;
   border-radius: 50%;
 }
 
 .content__friends-list li::after {
   content: "";
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.friends-list__online::after {
   background: #5fd460;
+}
+
+.friends-list__offline::after {
+  background: #3a495d;
+}
+
+.friends__load-more {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--b4);
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 60px;
+  border-bottom: 2px solid var(--b3);
+}
+
+.friends__load-more box-icon {
+  background-color: var(--b3);
   border-radius: 50%;
 }

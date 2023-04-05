@@ -6,6 +6,11 @@
 /*? HEADER */
 @import "./header/header.css";
 
-/*? FRIENDS */
+/*? SIDEBAR */
+@import "./content/content.css";
 @import "./content/friends.css";
+@import "./content/join-now.css";
+
+/*? MAIN CONTENT*/
 @import "./content/main-stream.css";
+@import "./content/other-streams.css";

@@ -1,0 +1,134 @@
+.other-streams {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.other-streams__categories {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.other-streams__categories a:hover {
+  color: var(--w);
+}
+
+.actived {
+  color: var(--w);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actived::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 3px;
+  margin-top: 5px;
+  background-color: var(--main1);
+  border-radius: 5px;
+}
+
+.other-streams__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.other-streams__list li {
+  flex-basis: 300px;
+  margin-bottom: 30px;
+}
+
+.other-streams__thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.other-streams__thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  background-image: url("../../img/other_stream_thumbnail.jpg");
+  background-size: cover;
+  width: 95%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.other-streams__thumbnail img {
+  border-radius: 25px 25px 0 0;
+}
+
+.other-streams__status {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  font-size: 14px;
+}
+
+.other-streams__status span {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.other-streams__watching {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 10px;
+}
+
+.other-streams__live {
+  display: flex;
+  align-items: center;
+  background-color: #fa5875;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.list__title-stream {
+  display: block;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.list__streamer {
+  display: flex;
+  gap: 10px;
+}
+
+.list__streamer img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.list__streamer__name {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 5px;
+}
+
+.list__streamer__game {
+  color: var(--b4);
+}
+
+.verified::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../../img/verified-account.svg");
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}

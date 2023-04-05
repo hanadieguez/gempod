@@ -5,10 +5,11 @@
 body {
   font-family: "Nunito", sans-serif;
   color: var(--w);
+  background-color: var(--b1);
 }
 
 a {
-  color: var(--b3);
+  color: var(--b4);
 }
 
 .notification {

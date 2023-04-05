@@ -29,8 +29,8 @@
       <a href="./">
         <h1 class="header__logo">Gempod</h1>
       </a>
-      <nav aria-label="principal">
 
+      <nav aria-label="main">
         <!-- ------------- HEADER > MENU DESKTOP ------------- -->
         <ul class="header__menu">
           <li><a class="btn-menu" href="#">Overview</a></li>
@@ -59,39 +59,238 @@
   <!-- --------------------- CONTENT --------------------- -->
 
   <section class="content">
-    <div class="content__friends">
-      <span>Friends <box-icon name='dots-horizontal-rounded'></box-icon></span>
-      <ul class="content__friends-list">
-        <li>
-          <span><img src="./src/img/user-pic.png" alt="">Lorem ipsum</span>
-        </li>
-        <li>
-          <span><img src="./src/img/user-pic.png" alt="">Hana Dieguez</span>
-        </li>
-        <li>
-          <span><img src="./src/img/user-pic.png" alt="">Dxniel</span>
-        </li>
-        <li>
-          <span><img src="./src/img/user-pic.png" alt="">Herobrine123</span>
-        </li>
-        <li>
-          <span><img src="./src/img/user-pic.png" alt="">xXJoaozinhoXx</span>
-        </li>
-        <li>
-          <span><img src="./src/img/user-pic.png" alt="">Nine-fingers on Jail</span>
-        </li>
-      </ul>
-    </div>
+    <div class="content__side-bar">
+      <div class="content__friends">
+        <span>Friends <box-icon name='dots-horizontal-rounded'></box-icon></span>
 
-    <div class="main-stream-bg">
-      <div class="content__main-stream">
-        <h1>Nigma vs Niants Game <br>Valorant Champions / Playoffs</h1>
-        <span>
-          <img src="./src/img/valorant-ico.png" alt="">Valorant Game <span class="main-stream__dot-separator">•</span> Playoffs
-        </span>
-        <a class="main-stream__btn" href="#">Watch</a>
+        <!-- ------------ CONTENT > SIDEBAR > FRIENDS LIST ------------ -->
+        <ul class="content__friends-list">
+          <li class="friends-list__online">
+            <span><img src="./src/img/user_pic.png" alt="">Lorem ipsum</span>
+          </li>
+          <li class="friends-list__online">
+            <span><img src="./src/img/user_pic.png" alt="">Hana Dieguez</span>
+          </li>
+          <li class="friends-list__offline">
+            <span><img src="./src/img/user_pic.png" alt="">Dxniel</span>
+          </li>
+          <li class="friends-list__online">
+            <span><img src="./src/img/user_pic.png" alt="">Herobrine123</span>
+          </li>
+          <li class="friends-list__offline">
+            <span><img src="./src/img/user_pic.png" alt="">xXJoaozinhoXx</span>
+          </li>
+          <li class="friends-list__offline">
+            <span><img src="./src/img/user_pic.png" alt="">Nine-fingers on Jail</span>
+          </li>
+          <li class="friends-list__online">
+            <span><img src="./src/img/user_pic.png" alt="">SemNomeAqui</span>
+          </li>
+          <li class="friends-list__online">
+            <span><img src="./src/img/user_pic.png" alt="">WhiteZero</span>
+          </li>
+        </ul>
+
+        <!-- ------------ CONTENT > SIDEBAR > LOAD MORE ------------ -->
+        <div class="friends__load-more">
+          <box-icon name='chevron-down' size="sm"></box-icon>Load more
+        </div>
+      </div>
+
+      <!-- ------------- CONTENT > SIDEBAR > JOIN NOW ------------- -->
+      <div class="content__join-now">
+        <img src="./src/img/valorant_join.jpg" alt="">
+        <div>
+          <h3>Join the<br> Gempod Now</h3>
+          <p>Discover the best live streams anywhere.</p>
+          <a class="btn btn--join" href="#">Join Now</a>
+        </div>
       </div>
     </div>
+
+
+    <!-- --------------- CONTENT > MAINSTREAM --------------- -->
+    <div class="content__main">
+      <div class="main-stream-bg">
+        <div class="content__main-stream">
+          <h1>Nigma vs Niants Game <br>Valorant Champions / Playoffs</h1>
+          <span>
+            <img src="./src/img/valorant-ico.png" alt="">Valorant Game <span class="main-stream__dot-separator">•</span> Playoffs
+          </span>
+          <a class="btn" href="#">Watch</a>
+        </div>
+      </div>
+
+      <!-- --------------- CONTENT > OTHER STREAMS --------------- -->
+      <div class="other-streams">
+        <nav aria-label="categories">
+          <ul class="other-streams__categories">
+            <li><a class="actived" href="#">All Games</a></li>
+            <li><a href="#">Mystery</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Strategic</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </nav>
+
+        <!-- ------------ CONTENT > OTHER STREAMS > STREAMS LIST ------------ -->
+        <ul class="other-streams__list">
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name verified">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name verified">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name verified">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name verified">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="other-streams__thumbnail">
+              <div class="other-streams__status">
+                <span class="other-streams__watching">4.2K watching</span>
+                <span class="other-streams__live">
+                  <img src="./src/img/wifi-twowave.svg" alt="">Live
+                </span>
+              </div>
+              <img src="./src/img/other_stream_thumbnail.jpg" alt="">
+            </div>
+            <span class="list__title-stream">Shazam Radiant Ranked ─ Season 16</span>
+            <div class="list__streamer">
+              <img src="./src/img/user_pic.png" alt="">
+              <div>
+                <div class="list__streamer__name">Shazam</div>
+                <div class="list__streamer__game">Valorant</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </section>
 
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
